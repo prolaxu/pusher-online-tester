@@ -11,8 +11,10 @@
              <q-input v-model="config.wsHost" label="wsHost" outlined class="q-ma-sm" dense/>
              <q-input v-model="config.wsPort" label="wsPort" outlined type="number"  class="q-ma-sm" dense/>
              <q-input v-model="config.wssPort" label="wssPort" outlined type="number"  class="q-ma-sm" dense/>
-             <q-checkbox
+             <q-toggle
                v-model="config.forceTLS"
+               :false-value="false"
+               :true-value="true"
                label="forceTLS"
                class="q-ma-sm"
                dense
